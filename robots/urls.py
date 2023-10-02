@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import create_robot
+from .views import generate_excel_report
 
 urlpatterns = [
-    path('create/', create_robot, name='robot-create'),
+    # ...
+    path('api/download_excel_report/', generate_excel_report, name='download_excel_report'),
+    # ...
 ]
